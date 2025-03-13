@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANOJ-PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+</head>
+
+<body>
+    <div id="nav">
+        <h3><b>MANOJ</b> Portfolio</h3>
+        <div id="nav-content">
+            <a href="http://" target="_blank" rel="noopener noreferrer">HOME</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">ABOUT</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">SERVICES</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">PORTFOLIO</a>
+        </div>
+        <button class="trigger-button" onclick="showPopup()">Contact Me!</button>
+        <a href="login.html"><button class="trigger-button" target="login.html">login</button></a>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <div class="decorative-shape shape-1"></div>
+            <div class="decorative-shape shape-2"></div>
+            <div class="discount-badge">Contact Soon!</div>
+            <button class="close-button" onclick="hidePopup()">&times;</button>
+            <div class="popup-content">
+                <h2>Contact me to make your WEBSITE Ready </h2>
+                <p style="text-align:justify;">Buy now, regret never. Our discounts are more attractive than your ex.
+                    Warning: Shopping here might
+                    cause spontaneous happiness.!</p>
+                <form id="leadForm" onsubmit="submitForm(e)" action="">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="" placeholder="Write Your Message">
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="page">
+            <div id="loop">
+                <h1><b> CRAFTING </b>DIGITAL EXPERIENCE WITH <b><i>REAL</i></b> <span>CREATIVITY</span> &
+                    <span><i>CODE. </i></span>
+                </h1>
+                <h1><b> CRAFTING </b>DIGITAL EXPERIENCE WITH <b><i>REAL</i></b> <span>CREATIVITY</span> &
+                    <span><i>CODE. </i></span>
+                </h1>
+                <h1><b> CRAFTING </b>DIGITAL EXPERIENCE WITH <b><i>REAL</i></b> <span>CREATIVITY</span> &
+                    <span><i>CODE. </i></span>
+                </h1>
+            </div>
+            <h3>I'm MANOJ KUMAR DAS, a passionate designer <br> & developer with a love for clean, functional
+                <br>and user-friendly designs.
+            </h3>
+            <h4>...SCROLL TO READ</h4>
+            <canvas></canvas>
+        </div>
+        <div id="page1">
+            <div id="right-text">
+                <h3>MANOJ-PORTFOLIO / KEY WORD</h3>
+                <h1>DESIGN THAT
+                    <br>
+                    SPEAK CODE THAT
+                    <br>
+                    PERFORMS
+                </h1>
+            </div>
+            <div id="left-text">
+                <h1>MAKE A STORY
+                    <br>
+                    TAKE A CHANCE
+                    <br>
+                    BUILD AND OWNED
+                </h1>
+                <h3>..AND MAINTAIN GOOD HUMANITY</h3>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="text1">
+                <h3>MANOJ-PORTFOLIO / HAVE FUN</h3>
+                <h1>LET'S
+                    <br>
+                    BUILT THE BEST
+                    <br>
+                    TOGETHER
+                </h1>
+            </div>
+            <div id="text2">
+                <p>I craft high-performance, visually stunning websites that drive results <br> Creating sleek,
+                    responsive, and user-friendly websites for businesses worldwide. <br> Custom web solutions designed
+                    to elevate your brand and engage your audience.
+                    <br> Your vision, my expertise—let’s build something extraordinary. <br> MANOJ KUMAR DAS
+                </p>
+            </div>
+        </div>
+        <div id="page3">
+            <div id="text3">
+                <h3>MANOJ-PORTFOLIO / PLAYGROUND</h3>
+                <h1>
+
+                    WHERE
+                    <br>
+                    INOVATION MEETS
+                    <br>
+                    THE DESIGN
+                </h1>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+        integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+
+    <script src="firebase.js"></script>
+</body>
+
+</html>
